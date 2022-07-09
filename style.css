@@ -1,0 +1,25 @@
+:root {
+    --main-font-color: #4AF626;
+}
+
+html {
+    font-family: 'Menlo', sans-serif;
+    background: black;
+    color: var(--main-font-color);
+}
+
+body {
+    padding: 0 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+a, a:visited, a:focus {
+    color: var(--main-font-color);
+}
