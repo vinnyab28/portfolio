@@ -54,13 +54,13 @@ hr {
 	align-items: flex-end;
 }
 
-.title-section h1.title {
+.title-section h1#title {
 	font-size: 3rem;
 	width: 10ch;
 	margin: 0;
 }
 
-.title-section h2.sub-title {
+.title-section h2#sub_title {
 	font-size: 1.25rem;
 }
 
