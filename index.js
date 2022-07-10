@@ -44,4 +44,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
 			i++;
 		}, speed);
 	}
+
+	let nav_buttons = document.querySelectorAll(".nav-button");
+	nav_buttons.forEach((btn) => {
+		btn.addEventListener("click", (event) => {
+			let clicked_btn = event.target;
+			let path = clicked_btn.getAttribute("data-url");
+			window.location.href = path;
+		});
+	});
 });
