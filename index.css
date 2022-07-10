@@ -28,11 +28,11 @@ hr {
 	content: "";
 	position: absolute;
 	width: 155px;
-	height: 40px;
+	height: 30px;
 	background: black;
 	border: 5px solid var(--main-font-color);
 	z-index: 1;
-	top: -26px;
+	top: -21px;
 	left: 20px;
 	animation: animate-top-bar 1s linear 0s 1 normal;
 }
@@ -52,11 +52,11 @@ hr {
 	content: "";
 	position: absolute;
 	width: 155px;
-	height: 40px;
+	height: 30px;
 	background: black;
 	border: 5px solid var(--main-font-color);
 	z-index: 1;
-	bottom: -26px;
+	bottom: -21px;
 	right: -50px;
 	animation: animate-bottom-bar 1s linear 0s 1 normal;
 }
@@ -103,7 +103,7 @@ nav.bottom-nav {
 }
 
 nav.bottom-nav .nav-button {
-	padding: 10px;
+	padding: 10px 20px;
 	border: 3px solid var(--main-font-color);
 	background-color: black;
 	color: var(--main-font-color);
@@ -112,6 +112,27 @@ nav.bottom-nav .nav-button {
 	background-size: 200% 100%;
 	background-position: right bottom;
 	transition: all 0.5s ease;
+	position: relative;
+}
+
+nav.bottom-nav .nav-button:before {
+	content: "";
+	background: var(--main-font-color);
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 5px;
+	animation: wiggle 0.5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes wiggle {
+	from {
+		width: 5px;
+	}
+	to {
+		width: 10px;
+	}
 }
 
 nav.bottom-nav .nav-button:hover {
