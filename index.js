@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 		type_characters(
 			sub_title_ele,
 			PAGE_DATA.subTitle,
-			TYPING_SPEED * 10,
+			TYPING_SPEED * 5,
 			typeDescription
 		);
 	}
