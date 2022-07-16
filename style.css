@@ -1,25 +1,37 @@
 :root {
-    --main-font-color: #4AF626;
+	--main-font-color: #4af626;
 }
 
 html {
-    font-family: 'Menlo', sans-serif;
-    background: black;
-    color: var(--main-font-color);
+	font-family: "Menlo", sans-serif;
+	background: black;
+	color: var(--main-font-color);
 }
 
 body {
-    padding: 0 20px;
+	padding: 0 20px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+hr {
+	color: var(--main-font-color);
 }
 
 .text-white {
-    color: white;
+	color: white;
 }
 
 .text-bold {
-    font-weight: bold;
+	font-weight: bold;
 }
 
-a, a:visited, a:focus {
-    color: var(--main-font-color);
+a,
+a:visited,
+a:focus {
+	color: var(--main-font-color);
 }
