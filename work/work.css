@@ -1,0 +1,124 @@
+.timeline > ul {
+	padding: 50px 0;
+}
+
+.timeline > ul > li {
+	background: var(--main-font-color);
+	position: relative;
+	margin: 0 auto;
+	width: 5px;
+	padding-bottom: 40px;
+	list-style-type: none;
+}
+
+.timeline > ul > li:last-child {
+	padding-bottom: 7px;
+}
+
+.timeline > ul > li:before {
+	content: "";
+	background: #000000;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	width: 20px;
+	height: 20px;
+	border: 3px solid var(--main-font-color);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.timeline > ul > li .experience-group {
+	background: black;
+	position: relative;
+	top: 7px;
+	width: 450px;
+	border: 1px solid var(--main-font-color);
+}
+
+.timeline > ul > li .experience-group:before {
+	content: "";
+	background: var(--main-font-color);
+	position: absolute;
+	top: 18px;
+	width: 80px;
+	height: 5px;
+}
+.timeline > ul > li:nth-child(odd) .experience-group {
+	left: 200px;
+}
+.timeline > ul > li:nth-child(odd) .experience-group:before {
+	left: -80px;
+}
+.timeline > ul > li:nth-child(even) .experience-group {
+	left: calc(-450px - 200px);
+}
+.timeline > ul > li:nth-child(even) .experience-group:before {
+	right: -80px;
+}
+
+.logo-container {
+	border: 5px solid var(--main-font-color);
+	padding: 10px;
+	width: 210px;
+	background: #000000;
+	text-align: center;
+	position: absolute;
+	left: -120px;
+}
+
+.experience-group > .connector {
+	display: inline-block;
+	height: 1px;
+	width: 75px;
+	background-color: var(--main-font-color);
+}
+
+.experience-group > .wrapper {
+	border: 1px solid var(--main-font-color);
+}
+
+.experience-group > .wrapper > .top-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid var(--main-font-color);
+}
+
+.experience-group > .wrapper > .top-bar > .btn-group .btn {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin: 10px;
+}
+
+.experience-group > .wrapper > .top-bar > .btn-group .btn:nth-child(1) {
+	background-color: #ff453a;
+}
+
+.experience-group > .wrapper > .top-bar > .btn-group .btn:nth-child(2) {
+	background-color: #ff9f0a;
+}
+
+.experience-group > .wrapper > .top-bar > .btn-group .btn:nth-child(3) {
+	background-color: #30d158;
+}
+
+.experience-group > .wrapper > .section {
+	padding: 20px;
+}
+
+.experience-group > .wrapper > .section > .title {
+	color: var(--main-font-color);
+	font-size: 1.5rem;
+	margin: 0 0 20px 0;
+}
+
+.experience-group > .wrapper > .section > ul.description {
+	color: white;
+	padding-left: 15px;
+	list-style: square;
+}

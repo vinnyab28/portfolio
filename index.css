@@ -112,8 +112,8 @@ nav.bottom-nav .nav-button:before {
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 5px;
-	animation: wiggle 0.5s ease-in-out 0s infinite alternate;
+	width: 10px;
+	/* animation: wiggle 0.5s ease-in-out 0s infinite alternate; */
 }
 
 @keyframes wiggle {
