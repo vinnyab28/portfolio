@@ -34,18 +34,23 @@
 	grid-template-columns: repeat(5, auto);
 }
 
-.wrapper > .content > figure {
+.wrapper > .content > .img-container {
 	text-align: center;
 	color: white;
+	padding: 15px 0px;
 }
 
-.wrapper > .content img {
+.wrapper > .content > .img-container > span {
+	display: inline-block;
+}
+
+.wrapper > .content > .img-container img {
 	height: 64px;
-	padding: 10px;
-	filter: grayscale(100%);
+	/* filter: grayscale(100%); */
 	transition: all 0.5s;
 }
 
-.wrapper > .content img:hover {
+.wrapper > .content > .img-container > span:hover img {
 	filter: grayscale(0%);
+	transform: rotateY(360deg);
 }
