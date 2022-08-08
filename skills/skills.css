@@ -42,4 +42,10 @@
 .wrapper > .content img {
 	height: 64px;
 	padding: 10px;
+	filter: grayscale(100%);
+	transition: all 0.5s;
+}
+
+.wrapper > .content img:hover {
+	filter: grayscale(0%);
 }
