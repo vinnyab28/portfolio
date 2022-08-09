@@ -1,0 +1,55 @@
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	gap: 20px;
+}
+
+.certificate-card {
+	border: 1px solid var(--main-font-color);
+	border-radius: 3px;
+	padding: 15px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 1rem;
+}
+
+.certificate-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 30px;
+	height: 100px;
+	background-color: var(--main-font-color);
+	z-index: 0;
+}
+
+.certificate-card::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	height: 100px;
+	width: 30px;
+	z-index: -1;
+	background-color: #acacac;
+}
+
+.certificate-card .title,
+.certificate-card .sub-title {
+	text-align: center;
+	padding-left: 60px;
+}
+
+.certificate-card .title {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.certificate-card .footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
