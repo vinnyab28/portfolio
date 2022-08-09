@@ -2,30 +2,20 @@ const PAGE_DATA = {
 	title: "G. Vineeth Prakash",
 	subTitle: "UI/UX Developer",
 	description:
-		"Creative Front-End Developer offering 3+ years of experience providing high-impact web solutions for diverse industry organizations. Has an eye-for-detail to create robust web pages and increase the overall user experience. Enjoys working on CLI but love building creative and effective UI for better UX. Aspiring to combine broad background with strong technical skills to excel as a Front-End Developer.",
+		"Creative Front-End Developer offering 4+ years of experience providing high-impact web solutions for diverse industry organizations. Has an eye-for-detail to create robust web pages and increase the overall user experience. Enjoys working on CLI but love building creative and effective UI for better UX. Aspiring to combine broad background with strong technical skills to excel as a Front-End Developer.",
 };
 const TYPING_SPEED = 10;
 
 document.addEventListener("DOMContentLoaded", (e) => {
 	let title_ele = document.getElementById("title");
 	function typeTitle() {
-		type_characters(
-			title_ele,
-			PAGE_DATA.title,
-			TYPING_SPEED * 10,
-			typeSubtitle
-		);
+		type_characters(title_ele, PAGE_DATA.title, TYPING_SPEED * 10, typeSubtitle);
 	}
 	typeTitle();
 
 	let sub_title_ele = document.getElementById("sub_title");
 	function typeSubtitle() {
-		type_characters(
-			sub_title_ele,
-			PAGE_DATA.subTitle,
-			TYPING_SPEED * 5,
-			typeDescription
-		);
+		type_characters(sub_title_ele, PAGE_DATA.subTitle, TYPING_SPEED * 5, typeDescription);
 	}
 
 	let description_ele = document.getElementById("description");
