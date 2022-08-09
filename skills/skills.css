@@ -54,3 +54,9 @@
 	filter: grayscale(0%);
 	transform: rotateY(360deg);
 }
+
+@media only screen and (max-width: 480px) {
+	.wrapper > .content {
+		grid-template-columns: auto auto;
+	}
+}

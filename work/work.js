@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 	for (let i = 0; i < experience_groups.length; i++) {
 		let item = experience_groups.item(i);
 		let bottom_of_item = item.getBoundingClientRect().top + item.clientHeight / 2;
-		let bottom_of_window = document.documentElement.clientWidth;
+		let bottom_of_window = document.documentElement.clientHeight;
 
 		if (bottom_of_item > bottom_of_window) {
 			item.classList.add("hidden");

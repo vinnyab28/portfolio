@@ -129,3 +129,26 @@ nav.bottom-nav .nav-button:hover {
 	color: black;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 480px) {
+	.main-container {
+		flex-direction: column;
+		margin-bottom: 10px;
+	}
+
+	.title-section {
+		margin-top: 20px;
+		text-align: center;
+		align-items: center;
+	}
+
+	nav.bottom-nav {
+		margin-top: 10px;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	nav.bottom-nav .nav-button {
+		flex: 1 auto;
+	}
+}

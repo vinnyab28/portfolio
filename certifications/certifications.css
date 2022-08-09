@@ -59,3 +59,13 @@
 .certificate-card .footer a {
 	color: white;
 }
+
+@media only screen and (max-width: 480px) {
+	.card-list {
+		grid-template-columns: auto;
+	}
+
+	.certificate-card .footer {
+		flex-direction: column;
+	}
+}
