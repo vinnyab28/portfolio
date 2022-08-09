@@ -7,10 +7,8 @@
 
 .img-container {
 	background: black;
-	border: 5px solid var(--main-font-color);
 	position: relative;
 	width: 270px;
-	/* height: 400px; */
 	margin: 0 40px;
 }
 
@@ -46,7 +44,7 @@
 	background: black;
 	border: 5px solid var(--main-font-color);
 	z-index: 1;
-	bottom: -21px;
+	bottom: -14px;
 	right: -50px;
 	animation: animate-bottom-bar 1s linear 0s 1 normal;
 }
@@ -63,6 +61,7 @@
 }
 
 .img-container > img {
+	border: 5px solid var(--main-font-color);
 	width: 100%;
 	transform: scaleX(-1);
 }
